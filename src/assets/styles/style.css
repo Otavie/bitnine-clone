@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap");
+:root {
+  --black: #000000;
+  --blue: #007BFF;
+  --blue-linkedin: #117EB9;
+  --blue-facebook: #42599E;
+  --blue-dark: #022EA9;
+  --indigo: #6610F2;
+  --purple: #6F42C1;
+  --pink: #E83E8C;
+  --red: #DC3545;
+  --red-youtube: #CD201F;
+  --orange: #FD7E14;
+  --yellow: #FFC107;
+  --green: #28A745;
+  --green-letter-m: #00AB6C;
+  --teal: #20C997;
+  --cyan: #17A2B8;
+  --white: #FFFFFF;
+  --gray: #6C757D;
+  --gray-dark: #343A40;
+  --light: #F8F9FA;
+  --bg-color: #F3F6FB;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --ff-primary-body: 'Monda', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-primary-body);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-primary-body);
+  height: auto;
+  position: relative;
+}
+
+.text-center {
+  text-align: center;
+}
+
+p {
+  font-size: 13px;
+  color: var(--gray);
+  font-size: 1rem;
+}
+
+.agens-ha-manager-container p {
+  font-size: 1.125rem;
+}
+
+h1,
+h2 {
+  color: var(--black);
+  text-align: center;
+}
+
+.fa-chevron-up {
+  position: absolute;
+}
+
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .agens-ha-manager-container p {
+    font-size: 1.25rem;
+  }
+}

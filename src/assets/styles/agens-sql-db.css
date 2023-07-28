@@ -1,0 +1,152 @@
+.agens-sql-db-container {
+  font-family: var(--ff-primary-body);
+  background-color: var(--bg-color);
+}
+
+.agens-sql-db {
+  margin: 80px 0;
+}
+
+.agens-sql-db h1 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 28.6px;
+  margin-bottom: 1.5rem;
+}
+
+.agens-sql-db h2 {
+  font-size: 18px;
+  text-decoration: underline;
+  line-height: 24.2px;
+  font-weight: 700;
+  color: #444444;
+  margin-bottom: 1.75rem;
+}
+
+.agens-sql-db-content {
+  min-height: 50px;
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 22px;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.sql-db-content {
+  border-radius: 10px;
+  position: relative;
+  background-color: var(--white);
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.25);
+  border: 1px solid white;
+  transition: border ease-in-out 500ms;
+}
+
+.sql-db-content:hover {
+  border: 1px solid var(--blue);
+}
+
+.sql-db-content-overlay {
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  font-size: 1rem;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity ease-in-out 1000ms, transform ease-in-out 750ms;
+}
+
+.sql-db-content:hover > .sql-db-content-overlay {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.sql-db-content-overlay ul {
+  margin-left: 75px;
+  margin-right: 30px;
+  color: var(--gray);
+}
+
+.sql-db-content-overlay ul li {
+  margin-bottom: 0.25rem;
+}
+
+.ql-db-content-image img {
+  width: 100%;
+  transform: scale(0.65);
+}
+
+@media only screen and (min-width: 488px) {
+  .sql-db-content-overlay ul {
+    margin-left: 45px;
+    margin-right: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .sql-db-content-overlay ul {
+    margin-left: 30px;
+    margin-right: 15px;
+  }
+  .agens-sql-db-content {
+    min-height: 50px;
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 22px;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  .agens-sql-db h1 {
+    font-size: 34px;
+    line-height: 37.4px;
+  }
+  .agens-sql-db h2 {
+    line-height: 28px;
+    font-size: 20px;
+  }
+  .sql-db-content-overlay {
+    font-size: 0.7rem;
+    line-height: 1.75;
+  }
+  .agens-sql-db-content {
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 930px) {
+  .sql-db-content-overlay ul {
+    margin-left: 45px;
+  }
+  .sql-db-content-overlay {
+    font-size: 0.8rem;
+    line-height: 2;
+  }
+  .agens-sql-db-content {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .sql-db-content-overlay {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .sql-db-content-overlay {
+    font-size: 1rem;
+  }
+}

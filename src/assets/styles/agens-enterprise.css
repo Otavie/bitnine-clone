@@ -1,0 +1,37 @@
+.agens-enterprise-container {
+  background-color: var(--bg-color);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 130px;
+}
+
+.agens-enterprise {
+  width: 92%;
+  margin: 100px auto;
+}
+
+.agens-enterprise img {
+  height: auto;
+  width: 100%;
+}
+
+@media only screen and (min-width: 576px) {
+  .agens-enterprise {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .agens-enterprise {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .agens-enterprise {
+    width: 56%;
+  }
+}

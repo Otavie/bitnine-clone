@@ -1,0 +1,29 @@
+.key-features-container {
+  font-family: var(--ff-primary-body);
+  background-color: var(--white);
+}
+
+.key-features {
+  margin: 80px 0;
+}
+
+.key-features-header h1 {
+  font-size: 2.125rem;
+  margin-bottom: 1rem;
+  padding: 0px 20px;
+}
+
+.key-features-header p {
+  margin-bottom: 3rem;
+  padding: 0px 20px;
+}
+
+.key-features-content {
+  width: 88%;
+  margin: 0 auto;
+}
+
+.key-features-content img {
+  height: auto;
+  width: 100%;
+}
