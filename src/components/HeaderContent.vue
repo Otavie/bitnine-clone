@@ -59,10 +59,10 @@
                     </div>
                     
                     <div class="header-icon">
-                        <div class="icon-overlay letter-m-overlay"></div>
+                        <div class="icon-overlay medium-overlay"></div>
                         <div class="icon-item letter-m-icon">
                             <a href="https://blog.naver.com/bitnine9">
-                                <font-awesome-icon :icon="['fass', 'm']" class="letter-m icon" />
+                                <font-awesome-icon :icon="['fab', 'medium']" class="medium icon" />
                             </a>
                         </div>
                     </div>
@@ -77,30 +77,31 @@
                     <nav class="menu">
                         <ul class="menu-list">
                             <li class="list-products">
-                                <router-link class="menu-link active" to="/products">Products</router-link>
+                                <router-link class="menu-link active" to="/agensgraph">Products</router-link>
                                 <ul class="sub-menu sub-menu-products">
                                     <li>
-                                        <a href="https://bitnine.net/graph-database/">Graph Database <span class="forward-arrow">&#8250;</span></a>
+                                        <router-link to="/graph-database">Graph Database <span class="forward-arrow">&#8250;</span></router-link>
                                         <ul class="sub-sub-menu">
                                             <li>
-                                                <a href="https://bitnine.net/agensgraph/">AgensGraph</a>
+                                                <router-link to="/agensgraph">AgensGraph</router-link>
                                             </li>
                                             <li>
                                                 <a href="https://age.apache.org/">Apache AGE</a>
                                             </li>
                                             <li>
-                                                <a href="https://bitnine.net/ag-cloud/">AG Cloud</a>
+                                                <router-link to="/ag-cloud">AG Cloud</router-link>
                                             </li>
                                             <li>
-                                                <a href="https://bitnine.net/agensbrowser/">Visualization & Analysis</a>
+                                                <router-link to="/agensbrowser">Visualization & Analysis</router-link>
+                                                <!-- <a href="https://bitnine.net/agensbrowser/">Visualization & Analysis</a> -->
                                             </li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="https://bitnine.net/">Relational Database <span class="forward-arrow">&#8250;</span></a>
+                                        <router-link to="/">Relational Database <span class="forward-arrow">&#8250;</span></router-link>
                                         <ul class="sub-sub-menu sub-sub-menu-2">
                                             <li>
-                                                <a href="https://bitnine.net/">AgensSQL</a>
+                                                <router-link to="/">AgensSQL</router-link>
                                             </li>
                                         </ul>
                                     </li>
@@ -116,24 +117,24 @@
                                 <router-link class="menu-link" to="/documentation">Resources</router-link>
                                 <ul class="sub-menu sub-menu-resources">
                                     <li>
-                                        <a href="https://bitnine.net/documentation/">Documentation</a>
+                                        <router-link class="menu-link" to="/documentation">Documentation</router-link>
                                     </li>
                                     <li>
-                                        <a href="https://bitnine.net/learn/">Learn</a>
+                                        <router-link class="menu-link" to="/learn">Learn</router-link>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <router-link class="menu-link" to="/products">Blog</router-link>
+                                <router-link class="menu-link" to="/blog">Blog</router-link>
                             </li>
                             <li class="list-company">
                                 <router-link class="menu-link" to="/company">Company</router-link>
                                 <ul class="sub-menu sub-menu-company">
                                     <li>
-                                        <a href="https://bitnine.net/company/">About Us</a>
+                                        <router-link to="/company">About Us</router-link>
                                     </li>
                                     <li>
-                                        <a href="https://bitnine.net/contact/">Contact</a>
+                                        <router-link to="/contact">Contact</router-link>
                                     </li>
                                 </ul>
                             </li>
@@ -141,7 +142,7 @@
                                 <router-link class="menu-link" to="/ir-announcement">IR</router-link>
                             </li>
                             <li>
-                                <router-link class="menu-link try-free" to="/ir-announcement">Try Free</router-link>
+                                <router-link class="menu-link try-free" to="/agensgraph-downloads">Try Free</router-link>
                             </li>
                         </ul>
                     </nav>

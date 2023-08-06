@@ -1,14 +1,11 @@
 <script setup>
 import HeaderContent from '../components/HeaderContent.vue';
-import IRContent from '../components/IRContent.vue';
+import LearnContent from '../components/LearnContent.vue';
 import FooterContent from '../components/FooterContent.vue';
-
-
 </script>
 
 <template>
     <HeaderContent />
-    <IRContent />
-
+    <LearnContent />
     <FooterContent />
 </template>

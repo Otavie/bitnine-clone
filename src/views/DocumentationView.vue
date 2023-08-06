@@ -1,12 +1,15 @@
 <script setup>
+import DocumentationContent from '../components/DocumentationContent.vue';
 import FooterContent from '../components/FooterContent.vue';
 import HeaderContent from '../components/HeaderContent.vue';
-import UseCasesContent from '../components/UseCasesContent.vue';
 </script>
+
 
 <template>
     <HeaderContent />
-    <UseCasesContent />
+    <DocumentationContent />
 
+
+    
     <FooterContent />
 </template>

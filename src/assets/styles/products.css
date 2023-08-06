@@ -1,0 +1,320 @@
+.products-agensgraph-container {
+  padding-top: 130px;
+}
+
+.products-agensgraph {
+  padding: 64px 0;
+}
+
+.products-agensgraph h1 {
+  font-size: 3.438rem;
+  color: #444444;
+  line-height: 66px;
+  margin-bottom: 0.7rem;
+}
+
+.products-agensgraph p {
+  line-height: 1.5;
+}
+
+.why-agensgraph-container {
+  min-height: 50vh;
+  background-color: #F3F6FA;
+  padding: 92px 0;
+}
+
+.why-agensgraph-container-outer {
+  width: 95%;
+  height: 348px;
+  min-height: 248px;
+  height: 248px;
+  margin: auto;
+  perspective: 6000px;
+  perspective: 10000px;
+}
+
+.why-agensgraph-container-inner {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.why-agensgraph-front,
+.why-agensgraph-back {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+}
+
+.why-agensgraph-front {
+  background-color: #FFF;
+  transform: translateZ(174px);
+}
+
+.why-agensgraph-front h1 {
+  font-size: 3.438rem;
+  font-weight: 400;
+  color: var(--gray-dark);
+  margin-bottom: 0.7rem;
+}
+
+.why-agensgraph-front .agensgraph-logo img {
+  transform: scale(0.9);
+}
+
+.why-agensgraph-back {
+  background-color: #1E73BE;
+  color: white;
+  transform: rotateX(-90deg) translateZ(174px);
+}
+
+.why-agensgraph-back p {
+  color: white;
+  padding: 0 102px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.why-agensgraph-container-inner:hover .why-agensgraph-front {
+  transform: rotateX(180deg) translateZ(174px);
+}
+
+.why-agensgraph-container-inner:hover .why-agensgraph-back {
+  transform: rotateX(0deg) translateZ(174px);
+}
+
+.sql-cypher-container {
+  min-height: 100vh;
+  width: 100%;
+  background-color: white;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.sql-cypher-container .sql-cypher-head h1 {
+  font-size: 1.5rem;
+}
+
+.sql-cypher-container .sql-cypher-head h3 {
+  color: #444444;
+  font-size: 1rem;
+  line-height: 25.2px;
+  margin-bottom: 25px;
+}
+
+.sql-cypher-container .sql-cypher-head p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+}
+
+.sql-cypher-container .sql-cypher-content-inner {
+  max-width: 94%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 2.5rem;
+  transition: max-width ease 0.5s, width ease 0.5s;
+  border: 1px solid red;
+}
+
+.sql-cypher-content {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+.sql-cypher-content .sql-cypher-content-left {
+  width: 90%;
+}
+
+.sql-cypher-content .sql-cypher-content-left .agensgraph-img-container img {
+  width: 100%;
+}
+
+.sql-cypher-content .sql-cypher-content-right {
+  width: 100%;
+}
+
+.sql-cypher-content .cypherSQL-container,
+.sql-cypher-content .SQLCypher-container {
+  text-align: left;
+  color: #F8F8F2;
+}
+
+.sql-cypher-content .cypherSQL-container h3,
+.sql-cypher-content .SQLCypher-container h3 {
+  color: #1E73BE;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.sql-cypher-content .cypherSQL-container {
+  margin-bottom: 2rem;
+}
+
+.sql-cypher-content .cypherSQL,
+.sql-cypher-content .SQLCypher {
+  background-color: #2d2d2d;
+  padding: 20px;
+}
+
+.sql-font {
+  font-weight: 700;
+}
+
+.sql-red {
+  color: #F9245E;
+}
+
+.sql-purple {
+  color: #AC80FF;
+}
+
+.sql-white {
+  color: #F8F8F2;
+}
+
+.sql-blue {
+  color: #00A2e8;
+}
+
+.sql-cypher-footer {
+  margin-top: 2.5rem;
+}
+
+.sql-cypher-footer p {
+  color: var(--black);
+  font-size: 1.125rem;
+  margin-bottom: 12px;
+}
+
+.sql-cypher-footer p .inline-cipher {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gray-dark);
+}
+
+.read-more {
+  color: #8E8E8E;
+  border: 2px solid #8E8E8E;
+  height: 43.5px;
+  background-color: var(--light);
+  border-radius: 3px;
+  transition: all ease-in-out 0.35s;
+}
+
+.read-more a {
+  padding: 5.5px 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  font-family: var(--ff-primary-body);
+  color: #8E8E8E;
+  transition: all ease-in-out 0.35s;
+}
+
+.read-more:hover {
+  border-color: var(--yellow);
+  transform: translateY(-7px);
+}
+
+.read-more:hover a {
+  color: var(--yellow);
+}
+
+@media only screen and (min-width: 768px) {
+  .sql-cypher-container .sql-cypher-content-inner {
+    flex-direction: row;
+  }
+  .sql-cypher-container .sql-cypher-head p {
+    font-size: 1rem;
+  }
+  .sql-cypher-content {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+  .sql-cypher-content .sql-cypher-content-left {
+    width: 43%;
+    width: 33%;
+  }
+  .sql-cypher-content .sql-cypher-content-left .agensgraph-img-container img {
+    width: 100%;
+  }
+  .sql-cypher-content .sql-cypher-content-right {
+    min-width: 60%;
+    width: 65%;
+  }
+  .why-agensgraph-container-outer {
+    width: 95%;
+  }
+  .why-agensgraph-container-inner {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .why-agensgraph-front {
+    background-color: #FFF;
+  }
+  .why-agensgraph-front h1 {
+    font-size: 3.438rem;
+    font-weight: 400;
+    color: var(--gray-dark);
+    margin-bottom: 0.7rem;
+  }
+  .why-agensgraph-front .agensgraph-logo img {
+    transform: scale(0.9);
+  }
+  .why-agensgraph-back {
+    color: white;
+  }
+  .why-agensgraph-back p {
+    padding: 0 102px;
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .why-agensgraph-container-outer {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1175px) {
+  .sql-cypher-container .sql-cypher-content-inner {
+    width: 1170px;
+    transition: width ease 0.3s, max-width ease 0.5s;
+  }
+  .sql-cypher-container {
+    padding: 80px 70px;
+  }
+  .why-agensgraph-container-outer {
+    width: 100%;
+    margin-bottom: 92px;
+  }
+  .why-agensgraph-container-inner {
+    width: 50%;
+    height: 348px;
+  }
+  .why-agensgraph-container {
+    padding-bottom: 92px;
+  }
+}

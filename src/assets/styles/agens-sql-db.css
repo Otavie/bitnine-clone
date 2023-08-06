@@ -1,10 +1,7 @@
 .agens-sql-db-container {
   font-family: var(--ff-primary-body);
   background-color: var(--bg-color);
-}
-
-.agens-sql-db {
-  margin: 80px 0;
+  padding: 80px 0;
 }
 
 .agens-sql-db h1 {
@@ -50,7 +47,7 @@
 
 .sql-db-content-overlay {
   position: absolute;
-  background-color: white;
+  background-color: var(--light);
   top: 0;
   left: 0;
   bottom: 0;
@@ -100,7 +97,7 @@
   }
   .agens-sql-db-content {
     min-height: 50px;
-    width: 85%;
+    width: 95%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -120,9 +117,6 @@
   .sql-db-content-overlay {
     font-size: 0.7rem;
     line-height: 1.75;
-  }
-  .agens-sql-db-content {
-    width: 95%;
   }
 }
 

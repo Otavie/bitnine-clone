@@ -1,15 +1,14 @@
-<template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
-</template>
+<script setup>
+import HeaderContent from "../components/HeaderContent.vue";
+import ProductsContent from "../components/ProductsWHY.vue";
+import FooterContent from '../components/FooterContent.vue';
+</script>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
+<template>
+  <HeaderContent />
+  <ProductsContent />
+
+
+
+  <FooterContent />
+</template>

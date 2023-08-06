@@ -1,0 +1,118 @@
+.enterprise-graph-database-container {
+  padding: 90px 0;
+  background-color: #F3F6FA;
+}
+
+.enterprise-graph-database-container .enterprise-graph-database-head h1 {
+  font-size: 2.125rem;
+  line-height: 37.4px;
+}
+
+.enterprise-graph-database-container .enterprise-graph-database-head h4 {
+  font-size: 1.125rem;
+  line-height: 28px;
+  color: #444444;
+  margin-bottom: 0.85rem;
+}
+
+.enterprise-graph-database-inner {
+  border: 1px solid red;
+}
+
+.enterprise-graph-box-container {
+  min-height: 50px;
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 22px;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.enterprise-graph-content {
+  position: relative;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.25);
+  transition: border ease-in-out 0.5s;
+  border: 1px solid var(--white);
+}
+
+.enterprise-graph-content:hover {
+  border: 1px solid var(--blue);
+}
+
+.enterprise-graph-overlay {
+  position: absolute;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  padding: 20px;
+  border-radius: 10px;
+  transform: scale(0);
+  opacity: 0;
+  transition: opacity ease-in-out 0.75s, transform ease-in-out 0.75s;
+}
+
+.enterprise-graph-overlay h2 {
+  color: #444444;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.enterprise-graph-overlay p {
+  font-size: 0.875rem;
+  line-height: 1.75;
+}
+
+.enterprise-graph-content:hover > .enterprise-graph-overlay {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.enterprise-graph-image img {
+  width: 100%;
+  transform: scale(0.8);
+}
+
+@media only screen and (min-width: 768px) {
+  .enterprise-graph-box-container {
+    display: grid;
+    width: 95%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 22px;
+  }
+  .enterprise-graph-overlay h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+  .enterprise-graph-overlay p {
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (min-width: 870px) {
+  .enterprise-graph-overlay h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  .enterprise-graph-overlay p {
+    font-size: 0.875rem;
+    line-height: 1.75;
+  }
+}
+
+@media only screen and (min-width: 930px) {
+  .enterprise-graph-box-container {
+    width: 90%;
+  }
+}
